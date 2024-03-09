@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+
+    <p>rock paper scissor</p>
+
+    <button onclick="
+                    const ranDomNum = Math.random();
+                    let computerMove = '';
+
+                    if( ranDomNum >= 0 && ranDomNum < 1/3){
+                         computerMove = 'rock';
+                    } else if (ranDomNum >= 1/3 && ranDomNum < 2/3){
+                         computerMove = 'papper';
+                    }
+                    else if (ranDomNum >= 2/3 && ranDomNum < 1){
+                         computerMove = 'scissor';
+                    }
+                
+                    let result = '';
+                    if(computerMove === 'rock'){
+                        result = 'Tie.';
+                    }
+                    else if( computerMove === 'papper'){
+                        result = 'You Lose. ';
+                    }
+                    else{
+                        result = 'You win congrate!!!';
+                    }
+                    alert('You pick rock and the computer picked ' + computerMove+ '.' + result);
+                    ">Rock</button>
+    <button onclick="
+                    ranDomNum = Math.random();
+                    computerMove = '';
+
+                    if( ranDomNum >= 0 && ranDomNum < 1/3){
+                         computerMove = 'rock';
+                    } else if (ranDomNum >= 1/3 && ranDomNum < 2/3){
+                         computerMove = 'papper';
+                    }
+                    else if (ranDomNum >= 2/3 && ranDomNum < 1){
+                         computerMove = 'scissor';
+                    }
+                
+                    result = '';
+                    if(computerMove === 'rock'){
+                        result = 'You win congrate!!.';
+                    }
+                    else if( computerMove === 'papper'){
+                        result = 'Tie. ';
+                    }
+                    else{
+                        result = 'You Lose.';
+                    }
+                    alert('You pick papper and the computer picked ' + computerMove+ '.' + result);
+                    ">Papper</button>
+    <button onclick="
+                     ranDomNum = Math.random();
+                     computerMove = '';
+
+                    if( ranDomNum >= 0 && ranDomNum < 1/3){
+                        computerMove = 'rock';
+                    } else if (ranDomNum >= 1/3 && ranDomNum < 2/3){
+                        computerMove = 'papper';
+                    }
+                    else if (ranDomNum >= 2/3 && ranDomNum < 1){
+                        computerMove = 'scissor';
+                    }
+
+                    result = '';
+                    if(computerMove === 'rock'){
+                        result = 'You win congrate!!.';
+                    }
+                    else if( computerMove === 'papper'){
+                        result = 'Tie. ';
+                    }
+                    else{
+                        result = 'You Lose.';
+                    }
+                    alert('You pick scissor and the computer picked ' + computerMove+ '.' + result);
+                    ">Scissor</button>
+    
+    <script>
+      
+
+    </script>
+
+</body>
+</html>
